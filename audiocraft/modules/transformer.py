@@ -20,6 +20,7 @@ import torch
 import torch.nn as nn
 from torch.nn import functional as F
 from torch.utils.checkpoint import checkpoint as torch_checkpoint
+import platform
 if platform.system() != "Darwin":
   from xformers import ops
 
