@@ -14,7 +14,7 @@ torchaudio>=2.0.0
 huggingface_hub
 tqdm
 transformers>=4.31.0  # need Encodec there.
-xformers
+xformers; platform_system != "Darwin"
 demucs
 librosa
 gradio
